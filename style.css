@@ -1,0 +1,341 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #0077b6;
+    z-index: 1;
+    padding: 20px;
+}
+
+h1.Titulo {
+    font-family: "Your Desired Font", sans-serif;
+    font-size: 36px;
+    margin: 0;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    color: white;
+}
+
+nav li {
+    margin: 0 10px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section:first-of-type {
+    margin-top: 80px;
+}
+
+body {
+    background-image: url('https://img2.rtve.es/i/?w=1600&i=1512651589017.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+section.Desktop1 {
+    margin-top: 200px;
+}
+
+section.Desktop1.scrolled {
+    margin-top: 0;
+}
+
+section[name="CREADORES"] {
+    padding: 20px;
+    background: #f7f7f7;
+}
+
+.title-text {
+    margin: 0;
+    font-size: 80px;
+    -webkit-text-stroke: 5px black;
+    color: white;
+    font-family: 'Alfa Slab One', sans-serif;
+}
+
+.paragraph-text {
+    font-size: 40px;
+    -webkit-text-stroke: 3px black;
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+    margin-left: 20px;
+    max-width: 50%;
+}
+
+.white-font {
+    color: white;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rounded-image {
+    width: 80%;
+    margin-right: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        margin-right: 0;
+    }
+}
+
+#ALBUMES {
+    padding: 20px;
+    background: #f7f7f7;
+}
+
+.album-title {
+    font-size: 80px;
+    font-family: 'Alfa Slab One', sans-serif;
+    -webkit-text-stroke: 5px black;
+    color: white;
+}
+
+.album-mosaic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 100%;
+}
+
+.album-mosaic img {
+    width: 100%;
+    height: auto;
+}
+
+#HISTORIA {
+    padding: 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.historia-title {
+    font-size: 80px;
+    font-family: 'Alfa Slab One', sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#COLABORACIONES {
+    padding: 20px;
+    background: #f7f7f7;
+    text-align: left;
+}
+
+.colaboraciones-title {
+    font-size: 80px;
+    font-family: 'Alfa Slab One', sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: white;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-name {
+    display: flex;
+    align-items: center;
+}
+
+.image-name img {
+    width: 100%;
+    margin: 10px;
+}
+
+.name {
+    font-size: 40px;
+    font-family: 'Alfa Slab One', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-title {
+    font-size: 80px;
+    font-family: 'Alfa Slab One', sans-serif;
+    -webkit-text-stroke: 2px black;
+    color: white;
+    text-align: left;
+    margin: 0;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+}
+
+.contact-text {
+    font-size: 40px;
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+}
+
+.contact-form form {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.contact-form input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+/* Media Query para pantallas con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    header {
+        background-color: #003366;
+        padding: 10px;
+    }
+
+    h1.Titulo {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section.Desktop1 {
+        margin-top: 150px;
+    }
+
+    .rounded-image {
+        width: 60%;
+        margin-right: 0;
+    }
+}
+
+/* Media Query para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    section.Desktop1 {
+        margin-top: 150px;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .rounded-image {
+        width: 60%;
+        margin-right: 0;
+    }
+}
+
+/* Media Query para pantallas con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
+    body::before {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .album-title {
+        font-size: 60px;
+    }
+
+    .album-mosaic {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
